@@ -2,7 +2,7 @@
 
 A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhanced Anki flashcards using the Claude API.
 ## ScreenShots
-![Main GUI] ![image](https://github.com/user-attachments/assets/9796a63a-d4b3-41ff-ae35-346a98c72146)
+![Main GUI](https://github.com/user-attachments/assets/9796a63a-d4b3-41ff-ae35-346a98c72146)
 
 ## Features
 - **PPTX and PDF support**: Extracts text from both formats.
