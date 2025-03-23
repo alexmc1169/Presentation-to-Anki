@@ -55,7 +55,15 @@ CLAUDE_API_KEY=your_api_key_here
 ```
 Replace your_api_key_here with your actual Claude API key.
 
-3. Running the application
+## Usage
+1. Run the application:
 ```bash 
 python presentation_to_anki.py
 ```
+2. The GUI will open. Follow these steps:
+Click Browse to select your PowerPoint (.pptx) or PDF (.pdf) file.
+Enter a name for your Anki deck.
+Click Convert to Anki to generate flashcards.
+3. The generated Anki deck (.apkg file) will be saved to your Downloads folder.
+
+
