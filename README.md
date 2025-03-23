@@ -28,7 +28,7 @@ A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhance
 ### **Claude API Key**
 This project requires a Claude API key to function. Follow these steps to add your key:
 
-1. Sign up for an API key at [Claude's official website](https://www.claude.ai) (or the appropriate provider).
+1. Sign up for an API key at [Claude's official website](https://console.anthropic.com/).
 2. Open the `config.py` (or `settings.py`) file in the project.
 3. Locate the line where the API key is required, e.g.:
    ```python
