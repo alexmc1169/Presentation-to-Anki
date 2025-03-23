@@ -22,12 +22,14 @@ A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhance
    ```bash
    https://github.com/alexmc1169/presentation-to-anki
 
-## Installing Dependencies
-pip install -r requirements.txt
-
-## Running the application 
+2. Installing Dependencies
+```bash
+  pip install -r requirements.txt
+```
+3. Running the application
+```bash 
 python presentation_to_anki.py
-
+```
 ## How to Use Your Own API Key
 1. Sign up for an account at Anthropic's Claude API and obtain your API key.
 2. Replace "INSERT_YOUR_API_KEY_HERE" in the code with your actual API key.
