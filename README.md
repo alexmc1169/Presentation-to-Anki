@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ## Running the application 
 python presentation_to_anki.py
 
-# How to Use Your Own API Key
+## How to Use Your Own API Key
 1. Sign up for an account at Anthropic's Claude API and obtain your API key.
 2. Replace "INSERT_YOUR_API_KEY_HERE" in the code with your actual API key.
 3. Run the application.
