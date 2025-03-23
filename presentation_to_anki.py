@@ -11,6 +11,7 @@ import anthropic
 import json
 import re
 import time
+from dotenv import load_dotenv
 
 class ClaudeEnhancedConverter:
     def __init__(self, api_key):
@@ -391,11 +392,18 @@ class AnkiConverterApp(tk.Tk):
     def __init__(self):
         super().__init__()
         
-        # Insert your Claude API key here
-        self.api_key = "INSERT_YOUR_API_KEY_HERE"
+        # Load environment variables
+        load_dotenv()
+        
+        # Get API key from environment variables
+        self.api_key = os.getenv("CLAUDE_API_KEY")
+        
+        # Check if API key is available
+        if not self.api_key:
+            print("Warning: CLAUDE_API_KEY not found in environment variables!")
         
         self.title("Presentation to Anki Flashcards Converter")
-        self.geometry("700x700")
+        self.geometry("700x800")
         self.configure(padx=20, pady=20)
         
         self.setup_ui()
@@ -408,6 +416,19 @@ class AnkiConverterApp(tk.Tk):
         # Header
         header_label = ttk.Label(main_frame, text="Convert Presentations to Anki Flashcards", font=("Arial", 16, "bold"))
         header_label.pack(pady=10)
+        
+        # API key entry (only shown if not found in environment)
+        if not self.api_key:
+            api_frame = ttk.LabelFrame(main_frame, text="API Key")
+            api_frame.pack(fill=tk.X, padx=10, pady=10)
+            
+            self.api_key_var = tk.StringVar()
+            ttk.Label(api_frame, text="Claude API Key:").grid(row=0, column=0, padx=5, pady=10, sticky=tk.W)
+            api_key_entry = ttk.Entry(api_frame, textvariable=self.api_key_var, width=40, show="*")
+            api_key_entry.grid(row=0, column=1, padx=5, pady=10, sticky=tk.W)
+            
+            ttk.Label(api_frame, text="Note: For better security, set CLAUDE_API_KEY in a .env file").grid(
+                row=1, column=0, columnspan=2, padx=5, pady=5, sticky=tk.W)
         
         # File selection frame
         file_frame = ttk.LabelFrame(main_frame, text="Presentation/PDF File")
@@ -453,7 +474,7 @@ class AnkiConverterApp(tk.Tk):
         3. Click "Convert to Anki" to generate flashcards
         4. The Anki package (.apkg) will be saved to your Downloads folder
         
-
+        Note: This application uses Claude AI to generate intelligent flashcards from your slides.
         """
         
         instructions_label = ttk.Label(drop_frame, text=instructions, font=("Arial", 11), justify=tk.LEFT)
@@ -501,6 +522,15 @@ class AnkiConverterApp(tk.Tk):
             messagebox.showerror("Error", "Please enter a deck name.")
             return
         
+        # Get API key from environment or UI
+        api_key = self.api_key
+        if not api_key and hasattr(self, 'api_key_var'):
+            api_key = self.api_key_var.get()
+        
+        if not api_key:
+            messagebox.showerror("Error", "Claude API key is required. Please set CLAUDE_API_KEY in a .env file or enter it above.")
+            return
+        
         # Disable the convert button during conversion
         for widget in self.winfo_children():
             if isinstance(widget, ttk.Button):
@@ -513,8 +543,8 @@ class AnkiConverterApp(tk.Tk):
         # Run the conversion in a separate thread to keep the UI responsive
         def run_conversion():
             try:
-                # Initialize the converter
-                converter = ClaudeEnhancedConverter(self.api_key)
+                # Initialize the converter with the API key
+                converter = ClaudeEnhancedConverter(api_key)
                 
                 # Process the file
                 num_cards, output_path = converter.process_file(
@@ -544,6 +574,7 @@ class AnkiConverterApp(tk.Tk):
         for widget in self.winfo_children():
             if isinstance(widget, ttk.Button):
                 widget.configure(state=tk.NORMAL)
+
 
 if __name__ == "__main__":
     app = AnkiConverterApp()
