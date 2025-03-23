@@ -38,11 +38,23 @@ This project requires a Claude API key to function. Follow these steps to add yo
 1. Clone the repository:
 ```bash
 https://github.com/alexmc1169/presentation-to-anki
+cd Presentation-to-Anki
 ```
 2. Installing Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+## Configuration
+1. Create a .env file in the project root:
+```bash
+touch .env
+```
+2. Open the .env file in a text editor and add your Claude API key:
+```bash
+CLAUDE_API_KEY=your_api_key_here
+```
+Replace your_api_key_here with your actual Claude API key.
+
 3. Running the application
 ```bash 
 python presentation_to_anki.py
