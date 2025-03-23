@@ -23,6 +23,17 @@ A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhance
 - PyPDF2 and PyMuPDF (PDF parsing)
 - genanki (Anki deck creation)
 
+## **Setup Instructions**
+
+### **Claude API Key**
+This project requires a Claude API key to function. Follow these steps to add your key:
+
+1. Sign up for an API key at [Claude's official website](https://www.claude.ai) (or the appropriate provider).
+2. Open the `config.py` (or `settings.py`) file in the project.
+3. Locate the line where the API key is required, e.g.:
+   ```python
+   CLAUDE_API_KEY = "your_api_key_here"
+
 ## Installation
 1. Clone the repository:
 ```bash
@@ -36,7 +47,3 @@ pip install -r requirements.txt
 ```bash 
 python presentation_to_anki.py
 ```
-## How to Use Your Own API Key
-1. Sign up for an account at [Anthropic's Claude API](https://www.anthropic.com/) and obtain your API key.
-2. Replace "INSERT_YOUR_API_KEY_HERE" in the code with your actual API key.
-3. Run the application.
