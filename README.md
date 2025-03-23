@@ -1,4 +1,4 @@
-# Presentation-to-Anki Flashcards Converter
+# Presentation-to-Anki
 
 A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhanced Anki flashcards using the Claude API.
 
