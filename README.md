@@ -19,7 +19,8 @@ A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhance
 
 ## Installation
 1. Clone the repository:
-   ```bash https://github.com/alexmc1169/presentation-to-anki
+   ```bash
+   https://github.com/alexmc1169/presentation-to-anki
 
 ## Installing Dependencies
 pip install -r requirements.txt
