@@ -27,7 +27,8 @@ A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhance
 
 ### **Claude API Key**
 This project requires a Claude API key to function. Sign up for an API key at [Claude's official website](https://console.anthropic.com/).
-
+### **Downloading Anki**
+This project requires Anki to function. Download Anki at [Anki's official website](https://apps.ankiweb.net/)
 ## Installation
 1. Clone the repository:
 ```bash
