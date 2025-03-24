@@ -37,7 +37,7 @@ cd Presentation-to-Anki
 ```
 2. Installing Dependencies
 ```bash
-pip install python-pptx PyPDF2 PyMuPDF genanki anthropic python-dotenv
+pip install python-pptx PyPDF2 PyMuPDF genanki anthropic python-dotenv tkinter
 ```
 ## Configuration
 1. Create a .env file in the project root:
