@@ -2,12 +2,11 @@
 
 A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhanced Anki flashcards using the Claude API.
 ## Screenshots
-<img src="https://github.com/user-attachments/assets/9796a63a-d4b3-41ff-ae35-346a98c72146" alt="Sample Image" width="700" height="700">
-<img src="https://github.com/user-attachments/assets/d7411b0a-6cb2-4815-a6fb-aa84104a1f51" alt="Sample Image" width="700" height="200">
-<img src="https://github.com/user-attachments/assets/3cca17bb-7eaa-4e03-9231-17b2634f8d2e" alt="Sample Image" width="700" height="200">
-![image](https://github.com/user-attachments/assets/3cca17bb-7eaa-4e03-9231-17b2634f8d2e)
-![image](https://github.com/user-attachments/assets/ff22e3b5-98cc-403b-8b39-02d47a839326)
-![image](https://github.com/user-attachments/assets/d51b3ff9-c11f-44c7-a5b9-f3b8d2146a77)
+<img src="https://github.com/user-attachments/assets/9796a63a-d4b3-41ff-ae35-346a98c72146" alt="Sample Image" width="700" height="800">
+<img src="https://github.com/user-attachments/assets/d7411b0a-6cb2-4815-a6fb-aa84104a1f51" alt="Sample Image" width="700" height="150">
+<img src="https://github.com/user-attachments/assets/3cca17bb-7eaa-4e03-9231-17b2634f8d2e" alt="Sample Image" width="700" height="150">
+<img src="https://github.com/user-attachments/assets/ff22e3b5-98cc-403b-8b39-02d47a839326" alt="Sample Image" width="700" height="600">
+<img src="https://github.com/user-attachments/assets/d51b3ff9-c11f-44c7-a5b9-f3b8d2146a77" alt="Sample Image" width="700" height="300">
 
 
 ## Features
