@@ -6,6 +6,7 @@ A Python tool to convert PowerPoint (PPTX) and PDF presentations into AI-enhance
 ![Progress Bar](https://github.com/user-attachments/assets/d7411b0a-6cb2-4815-a6fb-aa84104a1f51)
 ![image](https://github.com/user-attachments/assets/3cca17bb-7eaa-4e03-9231-17b2634f8d2e)
 ![image](https://github.com/user-attachments/assets/ff22e3b5-98cc-403b-8b39-02d47a839326)
+![image](https://github.com/user-attachments/assets/d51b3ff9-c11f-44c7-a5b9-f3b8d2146a77)
 
 
 ## Features
